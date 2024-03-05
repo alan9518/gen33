@@ -1,0 +1,81 @@
+<!-- !DOCTYPE html le dice al navegador 
+    que esatmos usando un archivo de HTML 
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <!-- HEAD  encierra las etiquetas meta, aqui va la
+        "configuracion de la pagina"
+    -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="alan medina" />
+    <meta name="keywords" content="primera clase, html, clase1" />
+    <meta name="description" content="primera clase de maquetado" />
+    <title>Primera página</title>
+  </head>
+
+  <body>
+    <!-- encabezados -->
+    <h1>Encabezado h1</h1>
+    <h2>Encabezado H2</h2>
+    <h3>Encabezado H3</h3>
+    <h4>Encabezado H4</h4>
+    <h5>Encabezado H5</h5>
+    <h6>Encabezado H6</h6>
+
+    <!-- parrafos de texto -->
+    <p>Soy un párrafo</p>
+
+    <p>Párrafo 2</p>
+
+    <!-- los span son como los parrafos pero sin espacio entre ellos -->
+    <span> Soy un span 1 </span>
+    <span> Soy un span2 </span>
+    <span>Soy un span 3</span>
+
+    <p>
+      soy texto normal, soy texto en
+      <span>
+        <b> negritas </b>
+      </span>
+      h<span>O</span> l <span> A </span>
+    </p>
+
+    <h2>Hola mundo, primera pagina de alan</h2>
+
+    <!-- enlaces
+        el atributo de 'href' indica a donde apunta el enlace
+        el atributo de 'target' indica si el enlace se abre
+        dentro de la tab en la que estamos o en una nueva
+        _blank abre en el enlace en una tab nueva
+    -->
+
+    <a href="https://kodemia.mx" target="_blank"> Ir a kodemia </a>
+
+    <a href="./test.html"> Ir a test.html </a>
+
+    <p>
+      <u> soy un </u>
+      parrafo de texto <a href="#"> soy un enlace dentro del parrafo </a>
+      soy un parrafo de nuevo
+    </p>
+
+    <!-- imagenes
+        para mostrar una imagen hay qye usar el atributo src,
+        la imagen puede venir de una ruta absoluta o una ruta relativa
+        src indica la url de la imagen
+        alt indica el texto que aparece en caso de que la imagen no cargue bien
+     -->
+
+    <img src="https://picsum.photos/200/300" alt="imagen de lorem picum" />
+  </body>
+</html>
+
+<!-- rutas absolutas https://kodemia.mx/ estan compuestas por toda la URL del sitio al 
+    que queremos acceder
+-->
+<!-- rutas relativas: se encuentran dentro de la carpeta de nuestra pagina
+    por lo tanto, navegamos a traves de ellas de forma local, 
+    como usar el comando 'cd'
+    ./test.html 
+-->
