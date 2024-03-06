@@ -1,0 +1,41 @@
+/* selector universal */
+* {
+  margin: 0;
+}
+
+/* selector de etiqueta, este afecta a todas las etiquetas que sean iguales*/
+p {
+  color: red;
+  /* font-size: 40px; */
+}
+
+/* selector de clase */
+.parrafoAzul {
+  color: blue;
+}
+
+/* selector de ID */
+#parrafoVerde {
+  color: forestgreen;
+}
+
+.negritas {
+  font-weight: bold;
+}
+
+.caja {
+  border: 10px dashed blue;
+  padding: 20px;
+  /* margin: 25px; */
+  /* margin-top: 100px;
+  margin-bottom: 200px;
+  margin-left: 20px;
+  margin-right: 40px; */
+  /* margin: 20px 50px; */
+  margin: 20px 50px 100px 20px;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  color: white;
+}

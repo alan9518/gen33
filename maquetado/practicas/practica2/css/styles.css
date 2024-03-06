@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1c1e1f;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #d1cdc7;
+}
+
+.textoGris {
+  color: #d1cdc7;
+}
+
+/* p,
+h2,
+h5,
+h1 {
+  color: #d1cdc7;
+} */
+
+li,
+a {
+  color: #7deda5;
+  text-decoration: none;
+}
+
+ol {
+  list-style: none;
+}
