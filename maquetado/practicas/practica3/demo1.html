@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Perfil</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      main {
+        /* margin: 20px auto; */
+        /* max-width: 600px; */
+        border: 1px solid red;
+        width: 800px;
+        /* margin: 20px auto; */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .perfil {
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .perfil img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+
+      .perfil h2 {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+      }
+
+      .perfil p {
+        margin: 5px 0;
+        font-size: 18px;
+        color: #666;
+      }
+
+      .redes-sociales {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .redes-sociales li {
+        /* display: inline; */
+        margin-right: 10px;
+      }
+
+      .redes-sociales .icon:hover {
+        transform: scale(1.2);
+      }
+
+      .redes-sociales .icon {
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mi Perfil</h1>
+    </header>
+    <main>
+      <article class="perfil">
+        <img
+          src="./assets/avataaars.png"
+          alt="Mi Foto de Perfil"
+          class="icon"
+        />
+        <h2>Juan Pérez</h2>
+        <p>Desarrollador Web</p>
+        <ul class="redes-sociales">
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <img
+                src="./assets/icons8-twitter-144.png"
+                alt="twitter"
+                class="icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img
+                src="./assets/icons8-linkedin-144.png"
+                alt="linkedin"
+                class="icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/" target="_blank">
+              <img
+                src="./assets/icons8-github-120.png"
+                alt="github"
+                class="icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </article>
+    </main>
+  </body>
+</html>

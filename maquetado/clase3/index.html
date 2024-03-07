@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- camelcase selector hijo = selectorHijoDos -->
+    <!-- snakecase selector hijo = selector_hijo_dos-->
+    <!--  selector hijo = selector-hijo-dos-->
+    <header>
+      <h1>Selectores avanzados</h1>
+      <nav>
+        <a href="./pages/pseudoselectores.html">ir a pseudoselectores</a>
+      </nav>
+    </header>
+    <main>
+      <section id="selectorHijo">
+        <h2>selector hijo</h2>
+        <div>
+          <p>parrafo dentro de un hijo</p>
+        </div>
+        <p>parrafo dentro de un hijo</p>
+      </section>
+      <!-- selector de hijo directo -->
+      <section id="selectorHijoDirecto">
+        <h2>Selector Hijo Directo</h2>
+        <article>
+          <p>soy parrafo hijo directo del article</p>
+          <p>soy parrafo hijo directo del article 2</p>
+          <div>
+            <p>soy parrafo hijo directo del div dentro del article</p>
+            <p>soy parrafo hijo directo del article 3</p>
+          </div>
+        </article>
+      </section>
+      <!-- selector hermano General -->
+      <section id="selectorHermanoGeneral">
+        <h2>Selector Hermano General</h2>
+        <article>
+          <span>Span Hermano</span>
+          <p>asdasdasdasd</p>
+          <button>Boton 1</button>
+          <div>
+            <button>dsdasdasdasd</button>
+          </div>
+          <button>Boton 1</button>
+          <button>Boton 1</button>
+          <button>Boton 1</button>
+        </article>
+      </section>
+      <!-- selector hermano adyacente -->
+      <section id="selectorHermanoAdyacente">
+        <article>
+          <h2>Selector Hermano Adyacente</h2>
+          <h3>H3 hijo</h3>
+          <h4>H4 hijo</h4>
+          <h4>H4 hijo</h4>
+          <h4>H4 hijo</h4>
+        </article>
+      </section>
+      <!-- selector de atributos -->
+      <section>
+        <h2>Selector de atributos</h2>
+        <a href="https://www.google.com/contacto">Ir a google</a>
+        <a href="https://www.kodemia.com.mx">Ir a kodemia</a>
+        <input type="text" placeholder="ingresa tu nombre" />
+        <input type="password" placeholder="ingresa tu password" />
+      </section>
+    </main>
+  </body>
+</html>

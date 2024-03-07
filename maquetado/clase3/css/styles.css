@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+section {
+  border: 1px solid #e3e3e3;
+  padding: 10px;
+  margin: 20px;
+}
+section#selectorHijo p {
+  color: red;
+}
+
+#selectorHijoDirecto article > p {
+  color: blue;
+}
+
+/* selector hermano general */
+#selectorHermanoGeneral article span ~ button {
+  background-color: black;
+  color: white;
+}
+
+#selectorHermanoAdyacente article h3 + h4 {
+  text-decoration: underline;
+  font-size: 20px;
+  color: brown;
+}
+
+/* selector de atributo */
+
+a[href*="https://www.google.com"]
+{
+  font-size: 50px;
+  color: green;
+}
+
+input[type="password"] {
+  padding: 20px;
+}
+
+/* pseudoselectores */
+
+/* hover */
+.buttonHover {
+  background-color: #4668a8;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttonHover:hover {
+  background-color: white;
+  color: #4668a8;
+  border: 1px solid #4668a8;
+}
+
+.imagen {
+  width: 100px;
+}
+
+.imagen:hover {
+  filter: sepia(0.5);
+}
+
+#visitedLinks a:visited {
+  color: red;
+}
+
+#visitedLinks a:active {
+  color: green;
+}
+
+#listaCajas .caja {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  margin: 10px;
+}
+
+#listaCajas div.caja:first-child {
+  background-color: purple;
+}
+
+#listaCajas div.caja:last-child {
+  background-color: aqua;
+  color: blue;
+}
+
+#listaCajas div.caja:nth-child(even) {
+  background-color: pink;
+  color: blue;
+}
+
+/* elementos par */
+#listaCajas div.caja:nth-child(even) {
+  color: blue;
+}
+/* elementos impar */
+#listaCajas div.caja:nth-child(odd) {
+  color: green;
+}
+
+#listaCajas div.caja:nth-child(3n) {
+  width: 100px;
+}
+
+#listaCajas div.caja:nth-last-child(2) {
+  background-color: brown;
+  color: red;
+}
