@@ -1,0 +1,141 @@
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  color: white;
+  margin: 20px 0;
+  border-radius: 50%;
+  border: 1px dashed #000;
+}
+
+/* position relative
+    habilita las propiedades
+    de direccion
+    top, left, bottom, right.
+ */
+
+/* Para mover el elemento desde el lado derecho
+    se usan valores negativos
+    como left:-20px o right:20px */
+.cajaRelative {
+  position: relative;
+  top: -20px;
+  left: -60px;
+}
+
+#relative1 {
+  background-color: green;
+}
+
+/* posicion fixed */
+.cajaFixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* 
+    position absolute 
+    hay 2 casos. 
+        1) los elementos se posicionan de forma absoluta con el documento
+            el documento es el area visible de la pagina
+        2) los elementos se posicionan de forma absoluta con el primer elemento padre
+            contenedor cuya posicion sea RELATIVA
+*/
+.cajaAbsolute {
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+.padreRelativo {
+  width: 400px;
+  height: 500px;
+  border: 1px solid red;
+  position: relative;
+}
+
+.cajaAbsolute2 {
+  position: absolute;
+
+  /* con esto centramos elementos con position absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.positionSticky {
+  position: sticky;
+  top: 0;
+  background-color: blue;
+}
+
+/* animaciones y transiciones */
+.buttonHover {
+  background-color: #4668a8;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: all linear 300ms;
+  /* transition: background-color linear 3000ms, color linear 300ms,
+    border linear 600ms; */
+}
+
+.buttonHover:hover {
+  background-color: white;
+  color: #4668a8;
+  border: 1px solid #4668a8;
+}
+
+img {
+  width: 150px;
+  transition: filter ease-in 500ms 500ms;
+}
+
+img:hover {
+  filter: saturate(5);
+}
+
+.animaciones .caja {
+  animation: cambiar-color 2s infinite alternate;
+}
+
+.animaciones2 .caja {
+  animation: mover-caja 2s infinite alternate;
+}
+
+/* crear la animacion */
+@keyframes cambiar-color {
+  0% {
+    background-color: red;
+  }
+
+  50% {
+    background-color: blue;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes mover-caja {
+  0% {
+    transform: translateX(0);
+    background-color: green;
+  }
+  50% {
+    transform: translateX(200px);
+    border-radius: 0;
+    background-color: yellow;
+  }
+
+  100% {
+    transform: translateX(0);
+    border-radius: 50%;
+    background-color: red;
+  }
+}
