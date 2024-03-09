@@ -1,0 +1,54 @@
+/* Reset some default styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style main */
+main {
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.features {
+  margin-top: 20px;
+}
+
+.features .feature {
+  margin-bottom: 20px;
+}
+
+/* Style footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
