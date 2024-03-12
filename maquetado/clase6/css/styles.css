@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* hace que las dimensiones sean mas exactas
+           hace que el padding y el border pasen a 
+           formar parte del cálculo del ancho de la 
+           caja y no lo suman posteriormente.
+         */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  width: 80%;
+  min-height: 600px;
+  margin: 20px auto;
+  /* padding: 10px; */
+  border: 10px solid #000;
+  position: relative;
+}
+
+.cajaRoja {
+  width: 100px;
+  height: 100px;
+  background-color: #fb7185;
+  padding: 1em;
+  font-weight: 900;
+  color: #f1f5f9;
+  text-align: center;
+  border: 10px solid #e11d48;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.containerFlex {
+  /* display:flex, convierte el contenedor en una caja flexbible */
+  display: flex;
+  /* direcciones: row, row-reverse, column, column-reverse*/
+  flex-direction: row;
+  /* justify-content, determina 
+      como se distribuyen los elementos 
+      en el main axis (horizontal) del contenedor
+      flex-start, flex-end, center, 
+      space-around, space-between, space-evenly
+  */
+  justify-content: center;
+  /* 
+      align-items, determina como se
+      distribuyen los elementos
+      en el cross axis (vertical) del 
+      contenedor dentro de la fila
+      flex-start, flex-end, center
+     */
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* overflow:scroll */
+  /* si tenemos habilitado flex:wrap, entonces, 
+      se habilita la propiedad align-content, con la cual 
+      podemos alinear verticalmente las filas creadas
+      con flex:wrap wrap
+     */
+  align-content: center;
+}
+
+/* flex col */
+.containerFlexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerFlexRow2 {
+  /* min-height: unset; */
+  min-height: unset;
+  height: 300px;
+}
+
+/* cambiar orden de elementos */
+/* order: nos permite cambiar el 
+      orden de los elementos hijo dentro 
+      del contendor flex  
+      Descomentar para verlo funcionar.
+  
+      order: -1 pone al elemento en la primera 
+      posicion.
+  
+  */
+.containerFlexRow2 #cajaRoja1 {
+  order: 3;
+}
+
+.containerFlexRow2 #cajaRoja3 {
+  order: -1;
+}
+
+.containerFlexRow3 {
+  flex-direction: column;
+}
+#cajaRoja11 {
+  flex-basis: 200px;
+}
+
+#cajaRoja12 {
+  flex-basis: 125px;
+}
+
+.containerAside {
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 0;
+  min-height: 100vh;
+}
+
+.containerAside aside {
+  flex-grow: 1;
+  border: 1px solid #fff;
+}
+
+.containerAside section {
+  flex-grow: 4;
+  border: 1px solid #fff;
+}
+
+/* ejes de colores para ejemplo */
+.axis {
+  position: absolute;
+  z-index: 20;
+}
+
+.cross-axis {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 100%;
+  background-color: blue;
+}
+
+.main-axis {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 5px;
+  width: 100%;
+  background-color: red;
+}
+
+.main-axis-col {
+  background-color: blue;
+}
+.cross-axis-col {
+  background-color: red;
+}
+
+.axis::after {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 2em;
+}
+
+.main-axis::after {
+  position: absolute;
+  content: "Main Axis";
+  color: red;
+}
+
+.cross-axis::after {
+  white-space: nowrap;
+  content: "Cross Axis";
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: blue;
+}
+
+.main-axis-col::after {
+  position: absolute;
+  content: "Cross Axis";
+  color: blue;
+}
+
+.cross-axis-col::after {
+  white-space: nowrap;
+  content: "Main Axis";
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: orange;
+}
