@@ -1,54 +1,89 @@
-/* Reset some default styles */
-body,
-html {
+/* el selector universal afecta todas las etiquetas
+  aqui se le esta quitando el espaciado por defecto
+  que tienen las etiquetas
+  margin: es el espacio externo de las etiquetas, permite separar una etiqueta de otra
+  padding: es el espacio interno de las etiquetas
+ */
+* {
   margin: 0;
   padding: 0;
 }
 
-/* Style header */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Style main */
-main {
-  padding: 20px;
-}
-
-.hero {
-  text-align: center;
-}
-
-.features {
+/*  
+  .enlaces es la clase que tiene el contenedor gris de los enlaces
+  background-color: define el color gris de fondo, se estan usando
+  colores en hexadecimal
+  padding: espacio interno de la etiqueta, da un espacio dentro del area gris
+  border-radius: redondea los bordes, en el area gris, las esquinas esta redondeaddas
+  width: Define el anchode la seccion
+  margin-top: espacio exterior del area gris hacia arriba;
+  margin-bottom: espacio exterior del area gris hacia abajo;
+  margin-left: espacio exterior del area gris hacia la izquierda;
+  margin-right: espacio exterior del area gris hacia derecha;
+  nota: usar margin con valor en 'auto' centra los elementos que tengan un width definido
+  
+*/
+.enlaces {
+  background-color: #d1d1d1;
+  padding: 8px;
+  border-radius: 8px;
+  width: 600px;
   margin-top: 20px;
-}
-
-.features .feature {
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Style footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+.enlaces li {
+  list-style: none;
+  padding: 4px;
+}
+
+.enlaces a {
+  color: #272727;
+}
+
+.enlaces ul {
+  border: 1px dashed #272727;
+}
+
+/* selector de etiqueta p, clase . id # */
+.docsContainer {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloqueDocumentacion {
+  margin-top: 8px;
+}
+
+.docItem {
+  background-color: #d3d3d3;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #d1d1d1;
+}
+
+.docItemTitle,
+.docItemDescription,
+.codeExampleContainer {
+  margin: 8px;
+}
+
+.codeExample {
+  background-color: #000;
+  height: 25px;
+  color: #72ff72;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+.docItem p:nth-child(2) {
+  color: #917c7c;
+}
+
+.docItem h3 {
+  margin: 8px;
 }

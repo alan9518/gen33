@@ -1,82 +1,75 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/styles.css" rel="stylesheet" />
-    <title>Tarea_1</title>
-  </head>
-  <body>
-    <header class="encabezado">
-      <div class="div_encabezado">
-        <h3 class="titulo"><span class="span_titulo">DAILY</span>UPDATES</h3>
-        <p class="parrafo_head">
-          Sample text. Click to select the text box. Click again or
-        </p>
-        <p>double click to start editing the text.</p>
-      </div>
-    </header>
-    <main>
-      <section>
-        <div class="div_section div_section1">
-          <img
-            alt="imagen_1"
-            class="img"
-            src="//images02.nicepage.com/a1389d7bc73adea1e1c1fb7e/4ded0426444e5d338ad04647/pexels-photo-3193889.jpeg?version="
-          />
-          <h4 class="titulo_contenido">Post 1 Headline</h4>
-          <p class="parrafo_section">Fri Jun 19 2020 | Comments (0)</p>
-          <a href="#" class="referencia">Read More</a>
-        </div>
-      </section>
-      <section>
-        <div class="div_section div_section2">
-          <img
-            alt="imagen_2"
-            class="img"
-            src="//images02.nicepage.com/a1389d7bc73adea1e1c1fb7e/cafc6d9ce7f55817832f1816/pexels-photo-3104234.jpeg"
-          />
-          <h4 class="titulo_contenido">Post 2 Headline</h4>
-          <p class="parrafo_section">Fri Jun 19 2020 | Comments (0)</p>
-          <a href="#" class="referencia">Read More</a>
-        </div>
-      </section>
-      <section>
-        <div class="div_section div_section3">
-          <img
-            alt="imagen_3"
-            class="img"
-            src="//images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/418e5cfcbc765e8a82aafffd/pexels-photo-2008426.jpeg?version="
-          />
-          <h4 class="titulo_contenido">Post 3 Headline</h4>
-          <p class="parrafo_section">Fri Jun 19 2020 | Comments (0)</p>
-          <a href="#" class="referencia">Read More</a>
-        </div>
-      </section>
-      <section>
-        <div class="div_section div_section4">
-          <img
-            alt="imagen_1"
-            class="img"
-            src="//images02.nicepage.com/a1389d7bc73adea1e1c1fb7e/4ded0426444e5d338ad04647/pexels-photo-3193889.jpeg?version="
-          />
-          <h4 class="titulo_contenido">Post 4 Headline</h4>
-          <p class="parrafo_section">Fri Jun 19 2020 | Comments (0)</p>
-          <a href="#" class="referencia">Read More</a>
-        </div>
-      </section>
-      <section>
-        <div class="div_section div_section5">
-          <img
-            alt="imagen_2"
-            class="img"
-            src="//images02.nicepage.com/a1389d7bc73adea1e1c1fb7e/cafc6d9ce7f55817832f1816/pexels-photo-3104234.jpeg"
-          />
-          <h4 class="titulo_contenido">Post 5 Headline</h4>
-          <p class="parrafo_section">Fri Jun 19 2020 | Comments (0)</p>
-          <a href="#" class="referencia">Read More</a>
-        </div>
-      </section>
-    </main>
-  </body>
-</html>
+<!-- 
+***************************************
+Para mostar el codigo de la etiqueta en la clase .codeExample
+(el cuadrito negro con texto verde)
+se reemplaza el caracter '<' por '&lt;'  y el caracter '>' por &gt;
+ejemplo: 
+   para mostrar <h1> texto </h1>  se haria:
+   &lt;h1&gt; encabezado &lt;/h1&gt;
+    se reemplazan los caracters < y > por los espaciales de arriba 
+    y se pone el nombre de la etiqueta
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <link rel="stylesheet" href="./css/styles.css" />
+     <title>HTML documentacion</title>
+   </head>
+   <body>
+     <!-- seccion de enlaces -->
+     <section class="enlaces">
+       <ul>
+         <li class="listItem">
+           <a href="#encabezados">#1.Encabezados</a>
+         </li>
+         <li class="class="listItem"">
+           <a href="#parrafos" class="linkItem">#2.Parrafos</a>
+         </li>
+       </ul>
+     </section>
+     <main class="docsContainer">
+       <!-- primer bloque de contenido -->
+       <section id="encabezados" class="bloqueDocumentacion">
+         <article class="docItem">
+           <h3>Encabezados (h1 - h6)</h3>
+ 
+           <p>
+             Las etiquetas &lt;h1&gt; to &lt;h6&gt; se utilizan para definir
+             encabezados HTML. <br />
+             <b> &lt;h1&gt; </b> Define el título más importante.
+             <br />
+             <b> &lt;h6&gt; </b>Define el encabezado menos importante.
+             <br />Nota: Utilice solo uno &lt;h1&gt; por página; este debe
+             representar el título/asunto principal de toda la página. Además, no
+             se salte los niveles de encabezado: comience con &lt;h1&gt;, luego
+             use &lt;h2&gt;, y así sucesivamente.
+           </p>
+           <p>Ejemplo de uso</p>
+           <div class="codeExampleContainer">
+             <code class="codeExample">&lt;h1&gt; encabezado &lt;/h1&gt;</code>
+           </div>
+         </article>
+       </section>
+       <!-- aqui termina el primer bloque -->
+ 
+       <!-- segundo bloque de contenido -->
+       <section id="parrafos" class="bloqueDocumentacion">
+         <article class="docItem">
+           <h3 class="docItemTitle">Parrafos (p)</h3>
+           <p class="docItemDescription">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt
+             cupiditate quod exercitationem explicabo? Quibusdam eum odio
+             voluptates praesentium aperiam temporibus aspernatur doloremque
+             dicta molestiae vel omnis, excepturi quas in!
+           </p>
+           <p>Ejemplo de uso</p>
+           <div class="codeExampleContainer">
+             <code class="codeExample">&lt;p&gt; parrafo &lt;/p&gt;</code>
+           </div>
+         </article>
+       </section>
+       <!-- aqui termina el segundo bloque -->
+     </main>
+   </body>
+ </html>

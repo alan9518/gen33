@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fondo {
+  background-color: $colorDeFondoSeccion;
+  height: 150px;
+  width: 300px;
+  margin: $seccionMargin;
+}
+
+.fondo2 {
+  background-color: $colorDeFondoSeccion;
+  height: 150px;
+  width: 300px;
+  margin: 50px;
+}
+
+header {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+body {
+  @include flexColumnCenter(column, center);
+}

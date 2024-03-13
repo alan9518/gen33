@@ -1,0 +1,15 @@
+// declarar variables
+$colorDeFondoSeccion: green;
+$seccionMargin: 20px 100px;
+$fondoTablet: blue;
+$fondoLaptop: red;
+
+// mixins
+//$flexDirection  = center
+@mixin flexColumnCenter($flexDirection, $justify) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justify;
+  flex-direction: column;
+  align-items: center;
+}

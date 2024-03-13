@@ -3,49 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>flexbox</title>
+    <style>
+      * {
+        background-color: whitesmoke;
+        width: 0;
+        height: 20px;
+        margin: 0;
+      }
+      .header {
+        width: 1235px;
+        height: 150px;
+        background-color: bisque;
+        color: white;
+        position: relative;
+        font-size: 50px;
+        text-align: center;
+      }
+      .aside {
+        width: 290px;
+        height: 540px;
+        margin: 10px;
+        background-color: red;
+        color: white;
+        position: relative;
+        top: 170px;
+        font-size: 50px;
+        text-align: center;
+      }
+      .article {
+        width: 800px;
+        height: 550px;
+        background-color: violet;
+        color: white;
+        position: relative;
+        top: 170px;
+        margin-left: 400px;
+        font-size: 50px;
+        text-align: center;
+        padding: 0%;
+      }
+      .article .contenedores {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(10, 41, 31);
+        border: solid 1px red;
+      }
+      .article.contenedores .i1 {
+        background-color: rgb(2, 31, 21);
+        text-align: center;
+        top: 800 px;
+      }
+      .footer {
+        width: 1235px;
+        height: 100px;
+        background-color: green;
+        color: white;
+        position: relative;
+        top: 730px;
+        font-size: 50px;
+        text-align: center;
+      }
+    </style>
+    <title>Document</title>
   </head>
   <body>
-    <section class="container containerFlex">
-      <!-- (div.cajaRoja{$})*5 -->
+    <header>
+      <div class="header">HEADER</div>
+    </header>
+    <aside>
+      <div class="aside">ASIDE</div>
+    </aside>
 
-      <div class="cajaRoja">1</div>
-      <div class="cajaRoja">2</div>
-      <div class="cajaRoja">3</div>
-      <div class="cajaRoja">4</div>
-      <div class="cajaRoja">5</div>
-      <div class="cajaRoja">6</div>
-      <div class="cajaRoja">7</div>
-      <div class="cajaRoja">8</div>
-      <div class="cajaRoja">9</div>
-      <div class="cajaRoja">10</div>
-      <div class="cajaRoja">11</div>
-      <div class="cajaRoja">12</div>
-      <div class="cajaRoja">13</div>
-      <div class="cajaRoja">14</div>
-      <div class="cajaRoja">15</div>
-      <div class="cajaRoja">16</div>
-      <div class="cajaRoja">17</div>
-      <div class="cajaRoja">18</div>
-
-      <div class="axis main-axis"></div>
-      <div class="axis cross-axis"></div>
-    </section>
-
-    <section class="container containerFlexCol">
-      <!-- (div.cajaRoja{$})*5 -->
-
-      <div class="cajaRoja">1</div>
-      <div class="cajaRoja">1</div>
-      <div class="cajaRoja">1</div>
-      <div class="cajaRoja">1</div>
-      <div class="cajaRoja">1</div>
-
-      <!--  -->
-
-      <div class="axis main-axis main-axis-col"></div>
-      <div class="axis cross-axis cross-axis-col"></div>
-    </section>
+    <article>
+      <div class="article">
+        ARTICLE
+        <div class="contenedores">
+          <div clase="i1">contenido1</div>
+          <div clase="i2">contenido2</div>
+          <div clase="i3">contenido3</div>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div class="footer">
+        <h3>FOOTER</h3>
+      </div>
+    </footer>
   </body>
 </html>
+----------------------------------------------

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fondo {
+  background-color: green;
+  height: 150px;
+  width: 300px;
+  margin: 20px 100px;
+}
+
+.fondo2 {
+  background-color: green;
+  height: 150px;
+  width: 300px;
+  margin: 50px;
+}
+
+header h1 {
+  font-size: 50px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #333;
+  width: 800px;
+}
+main .perfil {
+  text-align: center;
+}
+main .perfil img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+main .perfil h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+main .perfil p {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #666;
+}
+main .perfil .redes-sociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+main .perfil .redes-sociales .icon {
+  width: 40px;
+  height: 40px;
+}
+main .perfil .redes-sociales .icon:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: red;
+  }
+}/*# sourceMappingURL=main.css.map */
